@@ -1,0 +1,122 @@
+body {
+    background-color: #232323;
+    margin: 0;
+    color: #C1C1C1;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+}
+
+
+body {
+   font-size: 18px;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+   line-height: 1.45;
+}
+
+
+header {
+    height: 70px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.logo {
+    height: 26px;
+    width: auto;
+    display: inline-block;
+    float: left;
+    position: relative;
+    padding-top: 5px;
+}
+.seperator {
+    height: 36px;
+    width: 2px;
+    background-color: #C1C1C1;
+    display: inline-block;
+    float: left;
+    margin: 0 10px;
+}
+.dashboardTitle {
+    display: inline-block;
+    margin: -0;
+    padding: 0;
+    padding-top: 5px;
+    font-size: 22px;
+}
+#currentTime {
+    float: right;
+    display: inline-block;
+    font-size: 22px;
+    margin: 0;
+    margin-top: 5px;
+}
+.flex-container {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    min-height: calc(100vh - 70px);
+}
+.container {
+    overflow: visible;
+    max-width: 880px;
+    display: flex;
+    width: 100%;
+    float: left;
+    margin-bottom: 20%;
+}
+.sensorContainer {
+  width: 50%;
+    overflow: visible;
+  position: relative;
+/*    height: auto;*/
+    float: left;
+    margin: 0px 20px;
+    align-self: flex-end;
+/*    max-width: 200px;*/
+    justify-content: space-between;
+}
+.sensorContainer .reading {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    font-size: 38px;
+    line-height: 2.4;
+/*    font-size: 5vw;*/
+}
+.sensorContainer .readingLabel {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    margin-bottom: -30%;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    font-size: 38px;
+    line-height: 1.2;
+/*    font-size: 5vw;*/
+}
+.sensorContainer img {
+width: 100%;
+height: auto;
+}
+.sensorContainer .state-full {
+    transition: 1s ease;
+    clip-path: polygon(0 70%, 100% 70%, 100% 100%, 0% 100%);
+    position: absolute;
+    bottom: 0;
+}
+.sensorContainer .toggle {
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (min-width: 640px) {
+    .container {
+        width: 50%;
+        max-width: 400px;
+    }
+}

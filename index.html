@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="js/flowtype.js"></script>
+</head>
+
+<body>
+<header>
+    <img class="logo" src="img/uproot-logo.png" />
+    <div class="seperator"></div>
+    <p class="dashboardTitle">Dashboard</p>
+    <p id="currentTime">18:00</p>
+</header>
+
+<div class="flex-container">
+    <div>
+    <div class="container">
+
+        <div class="sensorContainer">
+            <p class="reading">20</p>
+            <p class="readingLabel">Water temperature (°C)</p>
+            <img src="img/bowl-empty.png" />
+            <img class="state-full" src="img/bowl-full.png" />
+        </div>
+
+        <div class="sensorContainer">
+            <p class="reading">20</p>
+            <p class="readingLabel">Water temperature (°C)</p>
+            <img src="img/temp-empty.png" />
+            <img class="state-full" src="img/temp-full.png" />
+        </div>
+        </div>
+
+    <div class="container">
+
+
+        <div class="sensorContainer">
+            <p class="reading">20</p>
+            <p class="readingLabel">Power usage (kw/h)</p>
+            <img src="img/power-low.png" />
+            <img class="toggle" src="img/power-high.png" />
+        </div>
+
+        <div class="sensorContainer">
+            <p class="reading">02:35</p>
+            <p class="readingLabel">LEDs OFF in (min)</p>
+            <img src="img/bulb-off.png" />
+            <img class="toggle" src="img/bulb-on.png" />
+        </div>
+
+    </div>
+    </div>
+</div>
+
+<script>
+//    $('body').flowtype({
+// minimum   : 500,
+// maximum   : 1200,
+// minFont   : 12,
+// maxFont   : 40,
+// fontRatio : 30
+//});
+//$('body').flowtype({
+//   fontRatio : 30
+//   lineRatio : 1.45
+//});
+    </script>
+<script>
+
+$(function () {
+    $('.sensorContainer .reading').flowtype({
+     fontRatio : 4,
+        lineRatio : 14
+    });
+    $('.sensorContainer .readingLabel').flowtype({
+     fontRatio : 11,
+        lineRatio : 11
+    });
+});
+</script>
+    </body>
+
+</html>
